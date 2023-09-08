@@ -3,14 +3,15 @@ package org.etsi.sol005.model;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.swagger.v3.oas.annotations.media.Schema;
 
-import javax.validation.constraints.NotNull;
+import jakarta.annotation.Generated;
+import jakarta.validation.constraints.NotNull;
 import java.util.Objects;
 
 /**
  * This type represents a link to a resource in a notification, using an absolute or relative URI. 
  */
 @Schema(description = "This type represents a link to a resource in a notification, using an absolute or relative URI. ")
-@javax.annotation.Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-01-28T13:36:15.501Z[Europe/London]")
+@Generated(value = "org.openapitools.codegen.languages.SpringCodegen", date = "2021-01-28T13:36:15.501Z[Europe/London]")
 public class NotificationLink {
     @JsonProperty("href")
     private String href;

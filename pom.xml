@@ -5,7 +5,7 @@
     <parent>
         <artifactId>spring-boot-starter-parent</artifactId>
         <groupId>org.springframework.boot</groupId>
-        <version>2.7.12</version>
+        <version>3.0.0</version>
         <relativePath />
         <!-- lookup parent from repository -->
     </parent>
@@ -57,18 +57,18 @@
         <scala.version>2.12</scala.version>
         <snakeyaml.version>2.0</snakeyaml.version>
         <sortpom-maven-plugin.version>2.8.0</sortpom-maven-plugin.version>
-        <springdoc.version>1.6.12</springdoc.version>
-        <wiremock.version>3.0.5</wiremock.version>
+        <springdoc.version>1.7.0</springdoc.version>
+        <wiremock.version>4.0.0</wiremock.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-yaml</artifactId>
-        </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-core</artifactId>
             <version>2.15.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.dataformat</groupId>
+            <artifactId>jackson-dataformat-yaml</artifactId>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
@@ -107,6 +107,7 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>1.18.28</version>
             <optional>true</optional>
         </dependency>
 
@@ -153,7 +154,7 @@
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-dependencies</artifactId>
-            <version>2021.0.4</version>
+            <version>2022.0.2</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -162,11 +163,11 @@
             <artifactId>spring-cloud-starter</artifactId>
             <version>3.1.4</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
-            <version>2.2.10.RELEASE</version>
-        </dependency>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+            <version>3.0.0</version>
+        </dependency>-->
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>

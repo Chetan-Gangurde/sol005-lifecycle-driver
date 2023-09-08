@@ -2,9 +2,10 @@ package org.etsi.sol005.nsd;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
+
+import jakarta.validation.Valid;
 import lombok.Data;
 
-import javax.validation.Valid;
 import java.util.Map;
 
 /**

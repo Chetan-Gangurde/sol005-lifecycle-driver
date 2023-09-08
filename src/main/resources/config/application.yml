@@ -4,15 +4,18 @@ management:
             base-path: /management
             exposure:
                 include: "*"
-    metrics:
+    graphite:
+      metrics:
         export:
-            graphite:
-                enabled: false
-            prometheus:
-                enabled: true
-            simple:
-                enabled: false
-
+          enabled: false
+    prometheus:
+      metrics:
+        export:
+          enabled: true
+    simple:
+      metrics:
+        export:
+          enabled: false
 spring:
   main:
     banner-mode: "off"
@@ -62,16 +65,17 @@ package-management:
     listOfServers: ishtar:8280
     IsSecure: true
 
-zuul:
-  prefix:
-  # sensitiveHeaders deliberately empty to forward all headers
-  sensitive-headers:
-  routes:
-    package-management:
-      path: /vnfpkgm/v2/vnf_packages/**
-      url: /api/etsi/vnfpkgm/v2/vnf_packages
-      serviceId: package-management
-      stripPrefix: true
+#zuul:
+#  prefix:
+#  # sensitiveHeaders deliberately empty to forward all headers
+#  sensitive-headers:
+#  routes:
+#    package-management:
+#      path: /vnfpkgm/v2/vnf_packages/**
+#      url: /api/etsi/vnfpkgm/v2/vnf_packages
+#      serviceId: package-management
+#      stripPrefix: true
+  
 
 springdoc:
   pathsToMatch:

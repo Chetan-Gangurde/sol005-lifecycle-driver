@@ -7,11 +7,11 @@ import com.fasterxml.jackson.annotation.JsonValue;
 import org.etsi.sol005.model.ProblemDetails;
 import org.etsi.sol005.nsd.NsdInfoLinks;
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.Valid;
 import lombok.Data;
 import org.etsi.sol005.model.PnfdOnboardingStateType;
 import org.etsi.sol005.model.PnfdUsageStateType;
 
-import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 

@@ -6,7 +6,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
-import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.core.env.Environment;
 
 import java.net.InetAddress;
@@ -14,7 +13,6 @@ import java.net.UnknownHostException;
 
 @SpringBootApplication
 @EnableConfigurationProperties(NFVODriverProperties.class)
-@EnableZuulProxy
 public class NFVODriverApplication {
     private static final Logger log = LoggerFactory.getLogger(NFVODriverApplication.class);
 
