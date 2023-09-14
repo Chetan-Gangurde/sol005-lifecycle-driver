@@ -24,6 +24,7 @@ public class WebSecurityConfiguration {
         this.nfvoDriverProperties = nfvoDriverProperties;
     }
 
+    @Bean
     protected SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
     return http.csrf(csrf->csrf.disable()).authorizeHttpRequests(authz -> { authz
